@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_fisting"-->
+<!--        android:icon="?android:attr/fingerprintAuthDrawable"-->
+<!--        android:title="DeFi" />-->
+    <item
+        android:id="@+id/navigation_call"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/fav" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_baseline_self_improvement_24"
+        android:title="@string/prof" />
+<!--    <item-->
+<!--        android:id="@+id/navigation_portfolio"-->
+<!--        android:icon="?attr/actionModePasteDrawable"-->
+<!--        android:title="Portfolio" />-->
+<!--    <item-->
+<!--        android:id="@+id/navigation_helpful"-->
+<!--        android:icon="@drawable/ic_baseline_assignment_ind_24"-->
+<!--        android:title="Signals" />-->
+</menu>

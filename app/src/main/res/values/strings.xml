@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MoviesTest</string>
+
+    <string name="loading">Loading</string>
+    <string name="api_key">d956b7da9aca3dde284ca82e1aaa52a9</string>
+    <string name="imagePath">https://image.tmdb.org/t/p/w500</string>
+    <string name="fav">Избранное</string>
+    <string name="prof">Профиль</string>
+    <string name="contacts">Контакты</string>
+    <string name="myname">Денис Клюев</string>
+    <string name="mynumber">telegram: +79371731631</string>
+    <string name="myemail">email: denis63982013@gmail.com</string>
+
+    <integer-array name="id">
+        <item>550</item>
+        <item>150</item>
+        <item>11111</item>
+    </integer-array>
+
+    <string-array name="title">
+        <item>Fight Club</item>
+        <item>48 Hrs.</item>
+        <item>King Lines</item>
+    </string-array>
+
+    <string-array name="voteAverage">
+        <item>8.4</item>
+        <item>6.7</item>
+        <item>6.9</item>
+    </string-array>
+
+    <string-array name="releaseDate">
+        <item>1999–10-15</item>
+        <item>1982-12-07</item>
+        <item>2007-03-01</item>
+    </string-array>
+
+    <string-array name="imageUrl">
+        <item>https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg</item>
+        <item>https://image.tmdb.org/t/p/w500/phNxblI8gWJxATAGd5G4Nts7GcL.jpg</item>
+        <item>https://image.tmdb.org/t/p/w500/5EB9LAzIePTQoMpg2M1GNJpNn9s.jpg</item>
+    </string-array>
+
+</resources>

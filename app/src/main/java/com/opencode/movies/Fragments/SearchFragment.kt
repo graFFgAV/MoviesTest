@@ -5,6 +5,7 @@ import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.opencode.movies.Adapters.MovieAdapter
 import com.opencode.movies.Adapters.SearchAdapter
@@ -98,10 +99,6 @@ class SearchFragment : Fragment(), SearchAdapter.Clicker {
         bundle.putString("image_url", company.posterPath)
         bundle.putString("voteAverage", company.voteAverage.toString())
         bundle.putString("releaseDate", company.releaseDate)
-        val fragment = DetailsFragment()
-        fragment.arguments = bundle
-        val transaction = requireActivity().supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.main_container, fragment).addToBackStack(null)
-        transaction.commit()
+        findNavController().navigate(R.id.detailsFragment, bundle)
     }
 }

@@ -9,10 +9,12 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.opencode.movies.DataBase.AppDatabase
 import com.opencode.movies.Adapters.FavoriteAdapter
+import com.opencode.movies.MainActivity
 import com.opencode.movies.Models.FavoriteModel
 import com.opencode.movies.R
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -49,6 +51,11 @@ class FavoriteFragment : Fragment(), FavoriteAdapter.Clicker, FavoriteAdapter.lo
         return v
     }
 
+    override fun onResume() {
+        super.onResume()
+        (activity as MainActivity?)!!.hideUpButton()
+    }
+
     override fun OnClick(company: FavoriteModel) {
         val bundle = Bundle()
         bundle.putString("id", company.id.toString())
@@ -56,11 +63,7 @@ class FavoriteFragment : Fragment(), FavoriteAdapter.Clicker, FavoriteAdapter.lo
         bundle.putString("image_url", company.image_url)
         bundle.putString("voteAverage", company.voteAverage.toString())
         bundle.putString("releaseDate", company.releaseDate)
-        val fragment = DetailsFragment()
-        fragment.arguments = bundle
-        val transaction = requireActivity().supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.main_container, fragment).addToBackStack(null)
-        transaction.commit()
+        findNavController().navigate(R.id.detailsFragment, bundle)
     }
 
     override fun onItemLongClicked(company: FavoriteModel, position: Int): Boolean {

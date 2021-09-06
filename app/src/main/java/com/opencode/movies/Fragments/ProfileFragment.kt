@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
+import com.opencode.movies.MainActivity
 import com.opencode.movies.R
 
 
@@ -22,5 +23,9 @@ class ProfileFragment : Fragment(){
         toolbar.title = "Профиль"
 
         return view
+    }
+    override fun onResume() {
+        super.onResume()
+        (activity as MainActivity?)!!.hideUpButton()
     }
 }

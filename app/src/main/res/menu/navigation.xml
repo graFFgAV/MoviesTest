@@ -6,12 +6,12 @@
 <!--        android:icon="?android:attr/fingerprintAuthDrawable"-->
 <!--        android:title="DeFi" />-->
     <item
-        android:id="@+id/navigation_call"
+        android:id="@+id/favoriteFragment"
         android:icon="@drawable/ic_baseline_favorite_24"
         android:title="@string/fav" />
 
     <item
-        android:id="@+id/navigation_chat"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/ic_baseline_self_improvement_24"
         android:title="@string/prof" />
 <!--    <item-->

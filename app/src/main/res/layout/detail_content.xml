@@ -12,6 +12,7 @@
         android:layout_height="250dp"
         android:layout_margin="15dp"
         app:cardCornerRadius="14dp"
+        app:cardElevation="9dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -144,6 +145,7 @@
         android:id="@+id/button_fav"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        app:elevation="9dp"
         android:layout_margin="12dp"
         app:cornerRadius="16dp"
         android:text="add to favorite"
@@ -155,6 +157,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView3"
+        app:cardElevation="9dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
@@ -192,6 +195,7 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView2"
+        app:cardElevation="9dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
